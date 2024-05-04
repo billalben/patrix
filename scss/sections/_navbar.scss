@@ -1,0 +1,5 @@
+@use "../custom";
+
+.navbar {
+  background-color: custom.$primary;
+}

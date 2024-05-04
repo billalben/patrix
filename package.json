@@ -1,0 +1,32 @@
+{
+  "name": "patrix",
+  "private": true,
+  "author": {
+    "name": "Billal Benzazoua",
+    "email": "billalben252@gmail.com"
+  },
+  "version": "0.0.0",
+  "description": "Learning bootstrap v5 with sass",
+  "type": "module",
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "learn-bootstrap",
+    "learn-sass"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "compile:sass": "sass --watch scss:assets/css",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0",
+    "sass": "^1.32.12"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.0"
+  }
+}
