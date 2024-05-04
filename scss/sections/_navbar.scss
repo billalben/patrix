@@ -1,5 +1,20 @@
-@use "../custom";
+@use "../custom" as *;
+@use "../components/mixins";
 
-.navbar {
-  background-color: custom.$primary;
+.menu {
+  @include mixins.gradient;
+
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: $white;
+      padding: 0 0.7rem;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+    &:hover {
+      color: $white;
+    }
+  }
 }
