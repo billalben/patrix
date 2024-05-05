@@ -23,7 +23,7 @@
     <!-- START SECTION 1 - THE NAVBAR SECTION -->
     <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#home">
           <img src="./images/logo.png" alt="logo image" />
         </a>
         <button
@@ -43,15 +43,22 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">faq</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
           </ul>
           <button type="button" class="rounded-pill btn-rounded">
             +1 728365413
@@ -1107,27 +1114,12 @@
     </footer>
 
     <!-- BACK TO TOP BUTTON  -->
-    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+    <a href="#home" class="shadow btn-primary rounded-circle back-to-top">
       <i class="fas fa-chevron-up"></i>
     </a>
 
     <script src="./node_modules/glightbox/dist/js/glightbox.min.js"></script>
-    <script type="text/javascript">
-      const lightbox = GLightbox({
-        touchNavigation: true,
-        href: "https://youtu.be/_QLF3B_fSJA?si=MAI3snuWnQ9u9w1c",
-        type: "video",
-        source: "youtube", //vimeo, youtube or local
-        width: 900,
-        autoPlayVideos: "true",
-      });
-
-      // BACK TO TOP BUTTON
-      const backToTop = document.querySelector(".back-to-top");
-      window.addEventListener("scroll", () => {
-        backToTop.classList[window.scrollY > 200 ? "add" : "remove"]("active");
-      });
-    </script>
+<script src="./assets/js/script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

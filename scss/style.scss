@@ -3,3 +3,7 @@
 // Import all the components and sections
 @use "./components";
 @use "./sections";
+
+html {
+  scroll-padding-top: 4rem;
+}
