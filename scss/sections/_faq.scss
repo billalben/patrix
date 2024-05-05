@@ -1,3 +1,5 @@
-.faq {
-  font-size: 12px;
+.accordion-button {
+  &:focus {
+    box-shadow: none;
+  }
 }
