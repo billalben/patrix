@@ -1,5 +1,7 @@
 "use strict";
 
+import GLightbox from "glightbox";
+
 const lightbox = GLightbox({
   touchNavigation: true,
   href: "https://youtu.be/_QLF3B_fSJA?si=MAI3snuWnQ9u9w1c",
