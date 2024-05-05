@@ -1,0 +1,12 @@
+@use "../components/mixins" as *;
+
+.back-to-top {
+  opacity: 0;
+  visibility: hidden;
+  @include transitionProperty;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}

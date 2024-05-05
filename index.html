@@ -948,7 +948,9 @@
               </svg>
             </div>
             <div class="contact-box__info">
-              <a href="tel:1 728365413" class="contact-box__info--title">+1 728365413</a>
+              <a href="tel:1 728365413" class="contact-box__info--title"
+                >+1 728365413</a
+              >
               <p class="contact-box__info--subtitle">Mon-Fri 9am-6pm</p>
             </div>
           </div>
@@ -974,7 +976,9 @@
               </svg>
             </div>
             <div class="contact-box__info">
-              <a href="mailto:info@company.com" class="contact-box__info--title">info@company.com</a>
+              <a href="mailto:info@company.com" class="contact-box__info--title"
+                >info@company.com</a
+              >
               <p class="contact-box__info--subtitle">Online support</p>
             </div>
           </div>
@@ -1102,6 +1106,11 @@
       </div>
     </footer>
 
+    <!-- BACK TO TOP BUTTON  -->
+    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
     <script src="./node_modules/glightbox/dist/js/glightbox.min.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({
@@ -1111,6 +1120,12 @@
         source: "youtube", //vimeo, youtube or local
         width: 900,
         autoPlayVideos: "true",
+      });
+
+      // BACK TO TOP BUTTON
+      const backToTop = document.querySelector(".back-to-top");
+      window.addEventListener("scroll", () => {
+        backToTop.classList[window.scrollY > 200 ? "add" : "remove"]("active");
       });
     </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
