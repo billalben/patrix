@@ -19,6 +19,6 @@
 
 // TRANSITION PROPERTY
 @mixin transitionProperty {
-  transition-duration: 1s;
+  transition-duration: 600ms;
   transition-property: all;
 }
