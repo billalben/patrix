@@ -28,3 +28,7 @@ navLinks.forEach((navLink) => {
     lastActiveNavLink = navLink;
   });
 });
+
+// Dynamic copyright year
+const copyrightYear = document.querySelector("span.copyright-yr");
+copyrightYear.textContent = new Date().getFullYear();
